@@ -1,0 +1,42 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR --export BEARER:0wdLAN0Dt14920hJFtQ1PYLqBY2Ngvo0rKDr6coggmy67FjTOcshqyll
+SETUVAR --export BROWSER:brave
+SETUVAR --export CRYPTOGRAPHY_OPENSSL_NO_LEGACY:1
+SETUVAR --export CUDA_HOME:/opt/cuda
+SETUVAR --export DB_DSN:mongodb\x3a//user\x3aYD7gf2bw7yfXz7HnOfapug8PVXNGTu8X\x40127\x2e0\x2e0\x2e1\x3a47017/pt\x3fauthSource\x3dadmin
+SETUVAR --export PROMPT:Sexy\x20girl\x20kissing\x20each\x20other
+SETUVAR --export PYENV_ROOT:/home/feridev/\x2epyenv
+SETUVAR --export PYTORCH_CUDA_ALLOC_CONF:\x1d
+SETUVAR --export SHA1:844c9ad2a109f636ec759012d67f2623be26b380
+SETUVAR --export TOKEN:eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9\x2eeyJjbGllbnRJZCI6IiIsImNsaWVudE5hbWUiOiIiLCJjbGllbnRQYXJlbnRJZCI6IiIsImVtYWlsIjoiZmVyaS5wdXRyb0BzcGVzb2x1dGlvbi5jb20iLCJleHAiOjE2OTg0MDg1NDEsInJvbGVJZCI6IjQ0ZjY4ZThiLTYyZDAtNGQ5OS05ODk1LTZkZTA2OGE3Nzg2YyIsInJvbGVOYW1lIjoic3lzdGVtIGFkbWluaXN0cmF0b3IiLCJ1c2VySWQiOiJmMzM4MGEwOC00N2JiLTRjMDMtOTVjYS1iMjNjYzgxYzM1MjMiLCJ1c2VybmFtZSI6ImZlcmkifQ\x2e2TVGuC3_iIbTNZQksa1wLwdU9\x2dS\x2d5e40dAvBUFI84CN1nItRvfeo0o\x2dzQcz80tiIJf6CcwdyfOtRgINlUeo_A_H9APgx59jAIPo_4XxVhG3Q6N9XnD2poGeJ8MULIQjokfkV4E\x2dNYu6Hd4zVna_SlXSsJXsJe9iqyYYhVPG4U1ICSOkol_rOFefbazGAdFcWYJixsWkK43VwtFSoTxwJ0NJDlK6TFhXd5RrTenOwd\x2dedzh5hrsC8ORptQxz_CiIOOfKSIjJ\x2dDJldadDSHNS6HzY2IzzYHyhnDWdiqIUZXYxkx0Jwwu\x2d08sC4L\x2dor1BUDpm_MF5smEeZ1of9bDSiP5Q
+SETUVAR __fish_initialized:3400
+SETUVAR fish_color_autosuggestion:555\x1ebrblack
+SETUVAR fish_color_cancel:\x2dr
+SETUVAR fish_color_command:blue
+SETUVAR fish_color_comment:red
+SETUVAR fish_color_cwd:green
+SETUVAR fish_color_cwd_root:red
+SETUVAR fish_color_end:green
+SETUVAR fish_color_error:brred
+SETUVAR fish_color_escape:brcyan
+SETUVAR fish_color_history_current:\x2d\x2dbold
+SETUVAR fish_color_host:normal
+SETUVAR fish_color_host_remote:yellow
+SETUVAR fish_color_normal:normal
+SETUVAR fish_color_operator:brcyan
+SETUVAR fish_color_param:cyan
+SETUVAR fish_color_quote:yellow
+SETUVAR fish_color_redirection:cyan\x1e\x2d\x2dbold
+SETUVAR fish_color_search_match:bryellow\x1e\x2d\x2dbackground\x3dbrblack
+SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
+SETUVAR fish_color_status:red
+SETUVAR fish_color_user:brgreen
+SETUVAR fish_color_valid_path:\x2d\x2dunderline
+SETUVAR fish_key_bindings:fish_default_key_bindings
+SETUVAR fish_pager_color_completion:normal
+SETUVAR fish_pager_color_description:B3A06D\x1eyellow\x1e\x2di
+SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
+SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_pager_color_selected_background:\x2dr
+SETUVAR fish_user_paths:/home/feridev/\x2elocal/bin\x1e/opt/google\x2dcloud\x2dsdk/bin\x1e/home/feridev/\x2epyenv/bin\x1e/var/lib/snapd/snap/bin\x1e/home/feridev/\x2elocal/share/gem/ruby/3\x2e0\x2e0/bin
