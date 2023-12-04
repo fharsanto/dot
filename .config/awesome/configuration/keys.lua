@@ -24,7 +24,7 @@ awful.keyboard.append_global_keybindings({
 	--- App
 	--- ~~~
 	-- Terminal
-	awful.key({ mod }, "Return", function()
+	awful.key({ mod }, "x", function()
 		awful.spawn(apps.default.terminal)
 	end, { description = "open terminal", group = "app" }),
 
