@@ -29,7 +29,7 @@ awful.keyboard.append_global_keybindings({
 	end, { description = "open terminal", group = "app" }),
 
 	--- App launcher
-	awful.key({ mod }, "d", function()
+	awful.key({ mod }, "r", function()
 		awful.spawn.with_shell(apps.default.app_launcher)
 	end, { description = "open app launcher", group = "app" }),
 
