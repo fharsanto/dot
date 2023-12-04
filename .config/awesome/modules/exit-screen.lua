@@ -18,7 +18,7 @@ local suspend_text_icon = ""
 local exit_text_icon = ""
 local lock_text_icon = ""
 
-local button_bg = beautiful.black
+local button_bg = beautiful.grey
 local button_size = dpi(120)
 
 --- Commands
