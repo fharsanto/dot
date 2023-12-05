@@ -114,3 +114,10 @@ source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # source /etc/profile.d/autojump.sh
+
+prompt_context() {
+  # Custom (Random emoji)
+  emojis=("⚡️" "🔥" "💀" "👑" "😎" "🐸" "🐵" "🦄" "🍻" "🚀" "💡" "🎉" "🔑" "🇹🇭" "🚦" "🌙")
+  RAND_EMOJI_N=$(( $RANDOM % ${#emojis[@]} + 1))
+  prompt_segment black default "${emojis[$RAND_EMOJI_N]} "
+}
