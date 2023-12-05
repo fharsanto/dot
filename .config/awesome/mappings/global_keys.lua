@@ -88,7 +88,8 @@ return gears.table.join(
   ),
   awful.key(
     { modkey },
-    "x", --"#36",
+    "x", 
+    --"#36",
     function()
       awful.spawn(user_vars.terminal)
     end,
@@ -150,11 +151,11 @@ return gears.table.join(
   ),
   awful.key(
     { modkey },
-    "r", -- "#40",
+    "r", 
     function()
       awful.spawn("rofi -show drun -theme ~/.config/rofi/rofi.rasi")
     end,
-    { descripton = "Application launcher", group = "Application" }
+    { description = "Application launcher", group = "Application" }
   ),
   awful.key(
     { modkey },
@@ -162,7 +163,7 @@ return gears.table.join(
     function()
       awful.spawn("rofi -show window -theme ~/.config/rofi/window.rasi")
     end,
-    { descripton = "Client switcher (alt+tab)", group = "Application" }
+    { description = "Client switcher (alt+tab)", group = "Application" }
   ),
   awful.key(
     { "Mod1" },
@@ -170,7 +171,7 @@ return gears.table.join(
     function()
       awful.spawn("rofi -show window -theme ~/.config/rofi/window.rasi")
     end,
-    { descripton = "Client switcher (alt+tab)", group = "Application" }
+    { description = "Client switcher (alt+tab)", group = "Application" }
   ),
   awful.key(
     { modkey },
@@ -178,15 +179,16 @@ return gears.table.join(
     function()
       awful.spawn(user_vars.file_manager)
     end,
-    { descripton = "Open file manager", group = "System" }
+    { description = "Open file manager", group = "System" }
   ),
   awful.key(
-    { modkey, "Shift" },
-    "#26",
+    { modkey },
+    "Escape", 
+    -- "#26",
     function()
       awesome.emit_signal("module::powermenu:show")
     end,
-    { descripton = "Session options", group = "System" }
+    { description = "Session options", group = "System" }
   ),
   awful.key(
     {},
