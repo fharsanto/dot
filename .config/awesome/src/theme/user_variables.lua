@@ -32,7 +32,10 @@ user_vars = {
 
   -- Write the terminal command to start anything here
   autostart = {
-    "picom --experimental-backends"
+    "picom --experimental-backends",
+    "blueman-applet",
+    "nm-applet",
+    "./.config/awesome/src/scripts/monitor.sh"
   },
 
   -- Type 'ip a' and check your wlan and ethernet name
