@@ -1,3 +1,3 @@
 #!/bin/bash
-rsync -azP .config ~/
+rsync -azP --exclude '*bak' .config ~/
 rsync -azP .gitconfig .gitconfig.work .zshrc ~/
