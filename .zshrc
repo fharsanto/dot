@@ -70,7 +70,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git z)
 
 
 # User configuration
@@ -144,5 +144,5 @@ prompt_context() {
   RAND_EMOJI_N=$(( $RANDOM % ${#emojis[@]} + 1))
   prompt_segment black default "${emojis[$RAND_EMOJI_N]} "
 }
-export PATH=~/.nix-profile/bin:$PATH
+export PATH=~/.nix-profile/bin:~/.local/bin:$PATH
 
