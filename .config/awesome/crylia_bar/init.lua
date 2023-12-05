@@ -26,14 +26,14 @@ awful.screen.connect_for_each_screen(
   require("src.modules.volume_controller")(s)
 
   -- Widgets
-  --s.battery = require("src.widgets.battery")()
+  s.battery = require("src.widgets.battery")()
   s.audio = require("src.widgets.audio")(s)
   s.date = require("src.widgets.date")()
   s.clock = require("src.widgets.clock")()
   --s.bluetooth = require("src.widgets.bluetooth")()
   s.layoutlist = require("src.widgets.layout_list")(s)
   s.powerbutton = require("src.widgets.power")()
-  s.kblayout = require("src.widgets.kblayout")(s)
+  -- s.kblayout = require("src.widgets.kblayout")(s)
   s.taglist = require("src.widgets.taglist")(s)
   s.tasklist = require("src.widgets.tasklist")(s)
   --s.cpu_freq = require("src.widgets.cpu_info")("freq", "average")
@@ -43,13 +43,13 @@ awful.screen.connect_for_each_screen(
   if s.index == 1 then
     s.systray = require("src.widgets.systray")(s)
     s.cpu_usage = require("src.widgets.cpu_info")("usage")
-    s.cpu_temp = require("src.widgets.cpu_info")("temp")
+    -- s.cpu_temp = require("src.widgets.cpu_info")("temp")
     s.gpu_usage = require("src.widgets.gpu_info")("usage")
     s.gpu_temp = require("src.widgets.gpu_info")("temp")
 
     require("crylia_bar.left_bar")(s, { s.layoutlist, s.systray, s.taglist })
     require("crylia_bar.center_bar")(s, { s.tasklist })
-    require("crylia_bar.right_bar")(s, { s.gpu_usage, s.gpu_temp, s.cpu_usage, s.cpu_temp, s.audio, s.kblayout, s.date, s.clock, s.powerbutton })
+    require("crylia_bar.right_bar")(s, { s.gpu_usage, s.gpu_temp, s.cpu_usage, s.battery, s.audio, s.date, s.clock, s.powerbutton })
     require("crylia_bar.dock")(s, user_vars.dock_programs)
   end
 
@@ -59,7 +59,7 @@ awful.screen.connect_for_each_screen(
 
     require("crylia_bar.left_bar")(s, { s.layoutlist, s.taglist })
     require("crylia_bar.center_bar")(s, { s.tasklist })
-    require("crylia_bar.right_bar")(s, { s.ram_info, s.audio, s.kblayout, s.network, s.date, s.clock, s.powerbutton })
+    require("crylia_bar.right_bar")(s, { s.ram_info, s.audio, s.network, s.date, s.clock, s.powerbutton })
   end
 end
 )
