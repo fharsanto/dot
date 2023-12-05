@@ -113,6 +113,7 @@ source $ZSH/oh-my-zsh.sh
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-nix-shell/nix-shell.plugin.zsh
 # source /etc/profile.d/autojump.sh
 
 prompt_context() {
@@ -121,3 +122,5 @@ prompt_context() {
   RAND_EMOJI_N=$(( $RANDOM % ${#emojis[@]} + 1))
   prompt_segment black default "${emojis[$RAND_EMOJI_N]} "
 }
+export PATH=~/.nix-profile/bin:$PATH
+
