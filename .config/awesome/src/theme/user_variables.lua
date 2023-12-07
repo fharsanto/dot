@@ -79,6 +79,9 @@ user_vars = {
   -- Screenshot program to make a screenshot when print is hit
   screenshot_program = "flameshot gui",
 
+  -- alternative Screenshot app
+  screenshot_area = "~/.config/awesome/src/scripts/screensht area",
+
   -- If you use the dock here is how you control its size
   dock_icon_size = dpi(50),
 

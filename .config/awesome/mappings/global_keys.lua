@@ -199,6 +199,14 @@ return gears.table.join(
     { description = "Screenshot", group = "Application" }
   ),
   awful.key(
+    { "Mod1" },
+    "#107",
+    function()
+      awful.spawn.easy_async_with_shell(user_vars.screenshot_area, function() end)
+    end,
+    { description = "Alternative Screenshot", group = "Application" }
+  ),  
+  awful.key(
     {},
     "XF86AudioLowerVolume",
     function(c)
