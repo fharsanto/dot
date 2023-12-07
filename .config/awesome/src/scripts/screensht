@@ -181,7 +181,7 @@ function main() {
     get_latest_img
     convert
 
-	mv $_LATEST_IMAGE_ $_ORIGINAL_DIR_
+	# mv $_LATEST_IMAGE_ $_ORIGINAL_DIR_
     
     _end_job_=$(date +%s)
     summary $_start_job_ $_end_job_
