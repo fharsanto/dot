@@ -35,7 +35,8 @@ user_vars = {
     "picom --experimental-backends",
     "blueman-applet",
     "nm-applet",
-    "./.config/awesome/src/scripts/monitor.sh"
+    "./.config/awesome/src/scripts/monitor.sh",
+    'xfce4-power-manager --daemon'
   },
 
   -- Type 'ip a' and check your wlan and ethernet name
