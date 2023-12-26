@@ -1,22 +1,33 @@
 call plug#begin('~/.vim/plugged')
 " leave some space in between
 
-Plug 'preservim/nerdtree'
+"Plug 'preservim/nerdtree'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'sheerun/vim-polyglot'
 
-Plug 'pineapplegiant/spaceduck', {'branch': 'main'}
+Plug 'folke/tokyonight.nvim'
+
+Plug 'nvim-tree/nvim-web-devicons' " optional
+Plug 'nvim-tree/nvim-tree.lua'
+
+Plug 'nvim-lua/plenary.nvim'
+
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }
 
 call plug#end()
 
 " we will add keybinds below this comment.
 "Changing default NERDTree arrows
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
 
-nnoremap <C-t> :NERDTreeToggle<CR>
+set number "Display line number on NVIM
+"let g:NERDTreeDirArrowExpandable = '▸'
+"let g:NERDTreeDirArrowCollapsible = '▾'
+"let g:NERDTreeHijackNetrw = 1
+"au VimEnter NERD_tree_1 enew | execute 'NERDTree '.argv()[0]
+
+"nnoremap <C-t> :NERDTreeToggle<CR>
 
 " coc nmap
 nmap <silent> gd <Plug>(coc-definition)
@@ -29,12 +40,6 @@ nnoremap <silent> <space>d :<C-u>CocList diagnostics<cr>
 nmap <leader>do <Plug>(coc-codeaction)
 nmap <leader>rn <Plug>(coc-rename)
 
-" spaceduck
-if exists('+termguicolors')
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
-endif
+colorscheme tokyonight-night
 
-colorscheme spaceduck
-
+lua require('init')
