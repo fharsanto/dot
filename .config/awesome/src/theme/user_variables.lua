@@ -59,7 +59,7 @@ user_vars = {
   },
 
   -- This is your default Terminal
-  terminal = "kitty",
+  terminal = "alacritty",
 
   -- This is the modkey 'mod4' = Super/Mod/WindowsKey, 'mod3' = alt...
   modkey = "Mod4",
@@ -94,8 +94,8 @@ user_vars = {
   -- Use xprop | grep WM_CLASS and use the *SECOND* string
   -- { WM_CLASS, program, name, user_icon, isSteam }
   dock_programs = {
-    -- { "Alacritty", "alacritty", "Alacritty" },
-    { "Kitty", "kitty", "Kitty" },
+    { "Alacritty", "alacritty", "Alacritty" },
+    -- { "Kitty", "kitty", "Kitty" },
     { "brave", "brave", "Brave" },
     { "firefox", "firefox", "Firefox" },
     -- { "discord", "discord", "Discord" },
