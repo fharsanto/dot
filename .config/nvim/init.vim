@@ -15,6 +15,8 @@ Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-lua/plenary.nvim'
 
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }
+Plug 'williamboman/mason.nvim' " Plugin Manager for Language
+Plug 'lewis6991/gitsigns.nvim'
 
 call plug#end()
 
