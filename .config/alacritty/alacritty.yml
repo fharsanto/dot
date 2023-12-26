@@ -1,5 +1,7 @@
-font:
-    normal:
-        family: JetBrains Mono
-        style: Regular
-    size: 8.0
+#font:
+#    normal:
+#        family: JetBrains Mono
+#        style: Regular
+#    size: 11.0
+env:
+  WINIT_X11_SCALE_FACTOR: "1"
