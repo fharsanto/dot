@@ -140,7 +140,7 @@ prompt_nix_shell() {
 prompt_context() {
   prompt_nix_shell
   # Custom (Random emoji)
-  emojis=("⚡️" "🔥" "💀" "👑" "😎" "🐸" "🐵" "🦄" "🍻" "🚀" "💡" "🎉" "🔑" "🇹🇭" "🚦" "🌙")
+  emojis=("⚡️" "🔥" "💀" "👑" "😎" "🐸" "🐵" "🦄" "🍻" "🚀" "💡" "🎉" "🔑" "🚦" "🌙")
   RAND_EMOJI_N=$(( $RANDOM % ${#emojis[@]} + 1))
   prompt_segment black default "${emojis[$RAND_EMOJI_N]} "
 }
