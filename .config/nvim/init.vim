@@ -4,26 +4,55 @@ call plug#begin('~/.vim/plugged')
 "Plug 'preservim/nerdtree'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 Plug 'sheerun/vim-polyglot'
-
 Plug 'folke/tokyonight.nvim'
-
 Plug 'nvim-tree/nvim-web-devicons' " optional
 Plug 'nvim-tree/nvim-tree.lua'
-
-Plug 'nvim-lua/plenary.nvim'
-
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }
-Plug 'williamboman/mason.nvim' " Plugin Manager for Language
-Plug 'lewis6991/gitsigns.nvim'
+Plug 'nvim-lua/plenary.nvim'		" Coroutine for lua
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }	" Searching with fuzzy
+Plug 'williamboman/mason.nvim' 	" Plugin Manager for Language
+Plug 'lewis6991/gitsigns.nvim' 	" Visual git changes
+Plug 'tpope/vim-fugitive' 			" Git plugins command 
+Plug 'kien/ctrlp.vim' 					" For finding files
+Plug 'SirVer/ultisnips'         " Snippet engine
+Plug 'honza/vim-snippets'       " Snippet
+" Golang support
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 call plug#end()
 
 " we will add keybinds below this comment.
 "Changing default NERDTree arrows
 
+syntax on 
 set number "Display line number on NVIM
+set cursorline
+set hlsearch
+set autowrite
+
+" nmap <c-s> :w<cr>
+" imap <c-s> <esc>:w<cr>a
+
+"ctrlp.vim 
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_switch_buffer = 'et'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+
+" Ultisnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+"set cc=80
 "let g:NERDTreeDirArrowExpandable = '▸'
 "let g:NERDTreeDirArrowCollapsible = '▾'
 "let g:NERDTreeHijackNetrw = 1

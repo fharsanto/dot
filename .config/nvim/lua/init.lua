@@ -8,6 +8,9 @@ vim.opt.termguicolors = true
 -- empty setup using defaults
 -- require("nvim-tree").setup()
 
+-- global
+vim.api.nvim_set_keymap("n", "<C-h>", ":NvimTreeToggle<cr>", {silent = true, noremap = true})
+
 -- OR setup with some options
 require("nvim-tree").setup({
   sort = {
