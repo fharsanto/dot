@@ -37,6 +37,9 @@ foreground = "0x1b1e28"
 background = "0x303340"
 text = "CellForeground"
 
+#[colors]
+#transparent_background_colors = true
+
 [cursor]
 blink_interval = 750
 style = "Beam"
@@ -96,9 +99,10 @@ history = 10000
 multiplier = 3
 
 [window]
-decorations = "full"
+padding = { x=24, y=24 }
+decorations = "None"
 dynamic_title = true
-opacity = 0.4
+opacity = 0.85
 startup_mode = "Windowed"
 title = "Alacritty Terminal"
 
@@ -106,6 +110,3 @@ title = "Alacritty Terminal"
 columns = 110
 lines = 30
 
-[window.padding]
-x = 24
-y = 24

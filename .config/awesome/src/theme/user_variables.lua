@@ -32,7 +32,7 @@ user_vars = {
 
   -- Write the terminal command to start anything here
   autostart = {
-    "picom --experimental-backends",
+    "picom -f", --experimental-backends",
     "blueman-applet",
     "nm-applet",
     "./.config/awesome/src/scripts/monitor.sh",
@@ -66,8 +66,8 @@ user_vars = {
 
   -- place your wallpaper at this path with this name, you could also try to change the path
   -- wallpaper = home .. "/.config/awesome/src/assets/fuji.jpg",
-  wallpaper = home .. "/.wallpapers/darth-vader-5k-2019-2560x1440.jpg",
-
+  -- wallpaper = home .. "/.wallpapers/darth-vader-5k-2019-2560x1440.jpg",
+  wallpaper = home .. "/.wallpapers/minimalism-4k-for-mac-desktop-wallpaper.jpg",
   -- Naming scheme for the powermenu, userhost = "user@hostname", fullname = "Firstname Surname", something else ...
   namestyle = "userhost",
 
