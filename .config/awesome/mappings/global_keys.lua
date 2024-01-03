@@ -3,6 +3,7 @@ local gears = require("gears")
 local awful = require("awful")
 local hotkeys_popup = require("awful.hotkeys_popup")
 local ruled = require("ruled")
+local spawns = require("src.tools.auto_starter")
 
 local modkey = user_vars.modkey
 
@@ -282,7 +283,10 @@ return gears.table.join(
     {},
     "XF86AudioPlay",
     function(c)
-      awful.spawn("playerctl play-pause")
+      spawns({
+        "mpc toggle",
+        "playerctl play-pause"
+      })
     end,
     { description = "Play / Pause audio", group = "System" }
   ),
@@ -290,7 +294,10 @@ return gears.table.join(
     {},
     "XF86AudioNext",
     function(c)
-      awful.spawn("playerctl next")
+      spawns({
+        "mpc next",
+        "playerctl next"
+      })
     end,
     { description = "Play / Pause audio", group = "System" }
   ),
@@ -298,7 +305,10 @@ return gears.table.join(
     {},
     "XF86AudioPrev",
     function(c)
-      awful.spawn("playerctl previous")
+      spawns({
+        "mpc prev",
+        "playerctl previous"
+      })
     end,
     { description = "Play / Pause audio", group = "System" }
   ),
