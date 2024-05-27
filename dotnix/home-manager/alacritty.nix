@@ -38,7 +38,7 @@
       imports = [
         (pkgs.fetchurl {
           url = "https://raw.githubusercontent.com/dracula/alacritty/9ae0fdedd423803f0401f6e7a23cd2bb88c175b2/dracula.toml";
-          hash = "sha256-28Tvtf8A/rx40J9PKXH6NL3h/OKfn3TQT1K9G8iWCkM=";
+          hash = "sha256-6d46eSVIyBEhaMHdGLVlHR6+4ok5dc2kzNnEwEMMh7g=";
         })
       ];
     };

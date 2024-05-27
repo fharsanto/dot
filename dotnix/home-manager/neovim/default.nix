@@ -7,7 +7,7 @@
 
     plugins = let
       pluginGit = owner: repo: rev: sha256:
-        pkgs.vimUtils.buildVimPluginFrom2Nix {
+        pkgs.vimUtils.buildVimPlugin {
 
           pname = repo;
           version = rev;
@@ -83,12 +83,12 @@
         type = "lua";
       }
       {
-        plugin = (pluginGit "mechatroner" "rainbow_csv" "master"
-          "kNjEjIOyWViQ6hLyTwP9no7ZF0Iv/TGW0oXPlBM4eu4=");
+        plugin = (pluginGit "mechatroner" "rainbow_csv" "6b914b4"
+          "qhwTALQw0rlruAqpWM3UifF9JEEmwlgCsfFZ7MXq0TQ=");
       }
       {
-        plugin = (pluginGit "kiyoon" "jupynium.nvim" "master"
-          "HJrg+Jun4CxXKBgKEQGnF/EjyrXjJMwLexCCrnXA0+Y=");
+        plugin = (pluginGit "kiyoon" "jupynium.nvim" "a0cfec0"
+          "QHm9jZPDvt1+xvFnFxKnSxztfgJxt6Fo1H4vS+okI4s=");
         type = "lua";
         config = builtins.readFile ./config/jupyter.lua;
       }
@@ -261,8 +261,8 @@
       suda-vim
       nui-nvim
       {
-        plugin = (pluginGit "amitds1997" "remote-nvim.nvim" "main"
-          "yU9eqb4YSSnJ/tgsqq/P/LQBz/yJCwbQJhPoqYBOlaY=");
+        plugin = (pluginGit "amitds1997" "remote-nvim.nvim" "2d5158a"
+          "AHMXJdptM6Bckp11NRInxskoCigdrX1EyOrKgDToPbk=");
         type = "lua";
         config = ''require("remote-nvim").setup()'';
       }
